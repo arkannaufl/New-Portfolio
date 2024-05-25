@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arkan Naufal | Portfolio</title>
+    <!-- Tailwind CDN Installation -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Poppins Font Installation -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- Boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="icon" href="src/icon.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="font-[Poppins]">
+    <!-- Navbar Section -->
+    <section id="navbar" class="fixed top-0 w-full z-50 bg-white shadow-md">
+        <div class="container mx-auto p-1">
+            <nav class="flex justify-between items-center p-4">
+                <div>
+                    <a class="font-bold text-xl text-[#2d2e32]">Arkan Naufal</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-button" class="focus:outline-none">
+                        <svg id="hamburger-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                        <svg id="close-icon" class="w-6 h-6 hidden" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+                <div class="hidden md:flex md:space-x-7">
+                    <ul class="flex space-x-7">
+                        <li><a href="#home"
+                                class="hover:font-bold hover:transition duration-100 text-[#2d2e32]">Home</a></li>
+                        <li><a href="#about"
+                                class="hover:font-bold hover:transition duration-100 text-[#2d2e32]">About</a></li>
+                        <li><a href="#work"
+                                class="hover:font-bold hover:transition duration-100 text-[#2d2e32]">Work</a></li>
+                        <li><a href="#contact"
+                                class="hover:font-bold hover:transition duration-100 text-[#2d2e32]">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="fixed inset-0 bg-white z-40 flex flex-col items-center justify-center transform -translate-x-full transition-transform duration-300 ease-in-out">
+        <ul class="space-y-7 text-center">
+            <li><a href="#home" class="hover:font-bold text-[#2d2e32]">Home</a></li>
+            <li><a href="#about" class="hover:font-bold text-[#2d2e32]">About</a></li>
+            <li><a href="#work" class="hover:font-bold text-[#2d2e32]">Work</a></li>
+            <li><a href="#contact" class="hover:font-bold text-[#2d2e32]">Contact</a></li>
+        </ul>
+    </div>
+    <!-- End Navbar Section -->
+
+    <!-- Home Section -->
+    <section id="home" class="bg-gray-50 h-screen flex justify-center items-center">
+        <div
+            class="container mx-auto px-4 md:px-0 w-full md:w-3/4 flex flex-col md:flex-row justify-center items-center">
+            <div class="hero-main flex flex-col-reverse md:flex-row justify-center items-center">
+                <div class="hero-text text-center justify-center md:text-left md:w-1/2">
+                    <h1 class="text-4xl md:text-5xl text-[#2d2e32] font-bold">Software Engineer <br> Student👋🏻</h1>
+                    <p class="pt-4 text-sm md:text-base text-[#707070]">Hi, I'm Arkan Naufal Ardhani. A Software
+                        Engineer Student at
+                        SMK IDN Boarding School Jonggol.📍</p>
+                    <div class="social space-x-2 pt-4 flex justify-center md:justify-start">
+                        <a class="text-3xl text-[#2d2e32] hover:text-gray-400 transition duration-200"
+                            href="https://www.linkedin.com/in/arkannaufl/"><i class='bx bxl-linkedin'></i></a>
+                        <a class="text-3xl text-[#2d2e32] hover:text-gray-400 transition duration-200"
+                            href="https://github.com/arkannaufl"><i class='bx bxl-github'></i></a>
+                        <a class="text-3xl text-[#2d2e32] hover:text-gray-400 transition duration-200"
+                            href="https://www.instagram.com/arkannaufl/"><i class='bx bxl-instagram'></i></a>
+                    </div>
+                </div>
+                <div class="hero-img md:w-1/2 flex justify-center md:justify-end">
+                    <div class="buat-img"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Home Section -->
+
+    <!-- About Section -->
+    <section id="about" class="h-auto py-28 flex justify-center items-center">
+        <div
+            class="container mx-auto px-4 md:px-0 w-full md:w-3/4 flex flex-col md:flex-row justify-center items-center">
+            <div class="hero-main flex flex-col md:flex-row justify-center items-center">
+                <div class="about-img md:w-1/2 flex justify-center">
+                    <div class="about_img"></div>
+                </div>
+                <div class="hero-text text-center justify-center items-center md:text-left md:w-1/2">
+                    <h1 class="text-xl text-[#707070] font-bold">About Me</h1>
+                    <h1 class="text-2xl md:text-3xl pt-1 text-[#2d2e32] font-bold">Arkan Naufal Ardhani</h1>
+                    <p class="pt-3 w-full md:w-2/3 text-sm md:text-base text-[#707070]">Hey👋🏻, my name is Arkan, a
+                        student who
+                        has an interest in Web Development, I'm a Software Engineer Student at SMK IDN Boarding School.
+                        And I love to creating and developing clean web UI/UX.</p>
+                    <div class="skills pt-7 flex justify-center md:justify-start">
+                        <h1 class="text-[#707070] font-normal text-base pr-3 pt-1.5">My Skills</h1>
+                        <div class="skills space-x-1">
+                            <a class="text-4xl text-[#2d2e32] hover:text-gray-400 transition duration-200" href="#"
+                                title="HTML"><i class='bx bxl-html5'></i></a>
+                            <a class="text-4xl text-[#2d2e32] hover:text-gray-400 transition duration-200" href="#"
+                                title="CSS"><i class='bx bxl-css3'></i></a>
+                            <a class="text-4xl text-[#2d2e32] hover:text-gray-400 transition duration-200" href="#"
+                                title="JavaScript"><i class='bx bxl-javascript'></i></a>
+                            <a class="text-4xl text-[#2d2e32] hover:text-gray-400 transition duration-200" href="#"
+                                title="Bootstrap"><i class='bx bxl-bootstrap'></i></a>
+                            <a class="text-4xl text-[#2d2e32] hover:text-gray-400 transition duration-200" href="#"
+                                title="Tailwind CSS"><i class='bx bxl-tailwind-css'></i></a>
+                            <a class="text-4xl text-[#2d2e32] hover:text-gray-400 transition duration-200" href="#"
+                                title="PHP"><i class='bx bxl-php'></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Project Section -->
+    <section id="work" class="h-auto py-16 flex justify-center items-center bg-gray-50">
+        <div class="container mx-auto px-4 md:px-0 w-full md:w-3/4 flex flex-col justify-start items-center">
+            <div class="content mx-auto w-10/12">
+                <h1 class="text-[#707070] font-bold text-xl">Project</h1>
+                <h1 class="text-[#2d2e32] mt-1 font-bold text-xl md:text-2xl">New projects coming soon 🛠</h1>
+            </div>
+        </div>
+    </section>
+    <!-- End Project Section -->
+
+    <!-- Contact Section -->
+    <section id="contact" class="h-auto py-16 flex justify-center items-center">
+        <div class="container mx-auto px-4 md:px-0 w-full md:w-3/4 flex flex-col justify-start items-center">
+            <div class="content mx-auto w-10/12">
+                <h1 class="text-[#707070] font-bold text-xl md:text-xl">Contact</h1>
+                <h1 class="text-[#2d2e32] mt-1 font-bold text-xl md:text-2xl">Don't be shy! Hit me up! 👇</h1>
+                <div class="content-contact pt-10 flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-10">
+                    <div class="linkedin flex flex-row items-center space-x-5">
+                        <i
+                            class='bx bxl-linkedin text-[#2d2e32] text-2xl md:text-3xl bg-white py-3 px-4 rounded-full shadow-md'></i>
+                        <div class="flex flex-col">
+                            <h1 class="text-xl text-[#2d2e32] font-bold">Linkedin</h1>
+                            <h1 class="text-l text-[#707070] font-semibold">Arkan Naufal Ardhani</h1>
+                        </div>
+                    </div>
+                    <div class="linkedin flex flex-row items-center space-x-5">
+                        <i
+                            class='bx bxs-envelope text-[#2d2e32] text-2xl md:text-3xl bg-white py-3 px-4 rounded-full shadow-md'></i>
+                        <div class="flex flex-col">
+                            <h1 class="text-xl text-[#2d2e32] font-bold">Email</h1>
+                            <h1 class="text-l text-[#707070] font-semibold">arkannaufal024@gmail.com</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Contact Section -->
+
+    <!-- Footer Section -->
+    <section id="footer" class="bg-[#2d2e32] mt-5 h-auto py-10 flex justify-center items-center">
+        <div
+            class="container mx-auto px-4 md:px-0 w-full md:w-3/5 flex flex-col md:flex-row justify-between items-center">
+            <h1 class="text-white font-bold text-center md:text-left text-l md:text-xl">Copyright © 2024. All rights are
+                reserved
+            </h1>
+            <div class="social space-x-2 pt-4 flex justify-center md:justify-end w-full md:w-auto">
+                <a class="text-2xl md:text-3xl text-white hover:text-gray-400 transition duration-200"
+                    href="https://www.linkedin.com/in/arkannaufl/"><i class='bx bxl-linkedin'></i></a>
+                <a class="text-2xl md:text-3xl text-white hover:text-gray-400 transition duration-200"
+                    href="https://github.com/arkannaufl"><i class='bx bxl-github'></i></a>
+                <a class="text-2xl md:text-3xl text-white hover:text-gray-400 transition duration-200"
+                    href="https://www.instagram.com/arkannaufl/"><i class='bx bxl-instagram'></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- End Footer Section -->
+
+    <script src="script.js"></script>
+</body>
+
+</html>
